@@ -1330,7 +1330,7 @@ const modbus_backend_t _modbus_rtu_backend = {
 };
 
 #ifdef ARDUINO
-modbus_t* modbus_new_rtu(RS485Class *rs485, unsigned long baud, uint16_t config)
+modbus_t* modbus_new_rtu(RS485Class *rs485, unsigned long baud, uint32_t config)
 #else
 modbus_t* modbus_new_rtu(const char *device,
                          int baud, char parity, int data_bit,
